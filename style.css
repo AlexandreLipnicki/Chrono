@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face {font-family: "Rubik" ; src: url("/fonts/Rubik/static/Rubik-Medium.ttf");}
+body{
+    min-height: 100vh;
+    background: rgb(183,23,218);
+    background: linear-gradient(180deg, rgba(183,23,218,1) 0%, rgba(253,187,45,1) 100%);
+    font-family: "Rubik";
+}
+header{
+    background-color: rgba(34, 32, 32, 0.267);
+    height: 10vh;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.349);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.stopwatch{
+    font-size: 6vh;
+    margin-left: 20px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 6vh;
+}
+nav a{
+    margin-right: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+    color: black;
+}
+nav a:hover{
+    transform: scale(1.1);
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);
+    color: rgb(39, 66, 219);
+}   
+.logo{
+    margin-left: 30px;
+}
+.block{
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 40vh;
+    width: 150vh;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 10vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.349);
+}
+.chrono{
+    width: 80%;
+    height: 55%;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 10vh;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.349);
+}
+.all_button{
+    margin: auto;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.button{
+    height: 8vh;
+    width: 8vh;
+    border-radius: 50%;
+    font-family: "Rubik";
+    font-size: 2.5vh;
+    background-color: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(0, 0, 0);
+    cursor: pointer;
+    transition: 0.3s;
+    color: rgba(0, 0, 0);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.349);
+}
+.button:hover{
+    transform: scale(1.2);
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.349);
+    background-color: hsla(0, 0%, 0%, 0.25);
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
+}
+.num{
+    width: 10%;
+    text-align: center;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Chrono</title>
+    <script src="https://kit.fontawesome.com/1477303799.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <i class="fas fa-stopwatch stopwatch"></i>
+        <nav>
+            <a href="https://twitter.com/lip_js" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://www.linkedin.com/in/alexandre-lipnicki/" target="_blank"><i class="fab fa-linkedin"></i>
+            <a href="https://github.com/AlexandreLipnicki" target="_blank"><i class="fab fa-github"></i></a>
+        </nav>
+    </header>
+    <!-- /HEADER -->
+
+    <!-- MAIN -->
+    <main>
+        <div class="block">
+            <div class="chrono">
+                <div class="num" id="heure-g"></div>
+                <div class="num" id="heure-d"></div>
+                <div class="num" >:</div>
+                <div class="num" id="minute-g"></div>
+                <div class="num" id="minute-d"></div>
+                <div class="num" >:</div>
+                <div class="num" id="seconde-g"></div>
+                <div class="num" id="seconde-d"></div>
+                <div class="num" >,</div>
+                <div class="num" id="mili-g"></div>
+                <div class="num" id="mili-d"></div>
+            </div>
+            <div class="all_button">
+                <button class="button" onclick="on()"><i class="fas fa-play"></i></button>
+                <button class="button" onclick="off()"><i class="fas fa-pause"></i></button>
+                <button class="button" onclick="stop()"><i class="fas fa-stop"></i></button>
+            </div>
+        </div>
+    </main>
+    <!-- /MAIN -->
+
+    <!-- FOOTER -->
+    <footer>
+
+    </footer>
+    <!-- /FOOTER -->
+    <script src="main.js"></script>
+</body>
+</html>
